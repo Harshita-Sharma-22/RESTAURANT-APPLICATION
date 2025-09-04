@@ -19,9 +19,9 @@ const Success = () => {
     return () => clearInterval(timeOutId)
   }, [navigate])
   
-  return 
+  return (
     <>
-    <section className='notFound'>
+    <section className='success'>
       <div className="container">
         <img src="/sandwich.png" alt="success" />
         <h1>Redirecting to home in {countdown} seconds...</h1>
@@ -29,6 +29,7 @@ const Success = () => {
       </div>
     </section>
     </>
+  )
 }
 
 export default Success
