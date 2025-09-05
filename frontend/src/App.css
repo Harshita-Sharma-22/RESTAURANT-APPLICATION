@@ -655,3 +655,476 @@ nav .logo{
     font-size: 2rem;
   }
 }
+
+/* --------------------Team Section------------------ */
+.team {
+  width: 100%;
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+
+.team .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading Section */
+.team .heading_section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team .heading_section .heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+.team .heading_section p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Team Grid */
+.team .team_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Team Card */
+.team .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  cursor: pointer;
+}
+
+.team .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Image */
+.team .card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #e63946;
+  transition: transform 0.4s ease;
+}
+
+.team .card img:hover {
+  transform: scale(1.05);
+}
+
+/* Name */
+.team .card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+/* Designation */
+.team .card p {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+  
+/* Responsive */
+@media (max-width: 768px) {
+  .team {
+    padding: 3rem 0;
+  }
+
+  .team .heading_section .heading {
+    font-size: 2rem;
+  }
+
+  .team .card {
+    padding: 1.5rem 1rem;
+  }
+
+  .team .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ------------------- Reservation Section ------------------ */
+.reservation{
+    width: 100%;
+    padding: 6rem 0;
+    background: #fff;
+}
+.reservation .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Left Image */
+.reservation .banner img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+/* Form Box */
+.reservation .reservation_form_box{
+    background: #f8f9fa;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 500px;
+}
+
+.reservation .reservation_form_box .heading{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #e63946;
+    margin-bottom: 0.8rem;
+}
+
+.reservation .reservation_form_box p{
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Form Inputs */
+.reservation .form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.reservation form div{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.reservation form input{
+    flex: 1;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.reservation form input:focus{
+    border-color:#e63946
+}
+
+/* Email wider */
+.reservation form .email_tag{
+    flex: 2;
+}
+
+/* Submit Button */
+.reservation form button {
+  background: #e63946;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.reservation form button:hover {
+  background: #d62828;
+  transform: translateY(-2px);
+}
+
+.reservation form button span {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .reservation .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reservation .reservation_form_box {
+    width: 100%;
+  }
+
+  .reservation form div {
+    flex-direction: column;
+  }
+}
+
+/*-------------- Footer-------------- */
+/* Footer Section */
+footer {
+  background: #1d3557; /* Dark navy */
+  color: #fff;
+  padding: 3rem 0 1.5rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Upper and lower rows */
+footer .banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .banner:last-child {
+  border-bottom: none;
+}
+
+/* Left side */
+footer .left {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f1faee;
+}
+
+/* Right side */
+footer .right {
+  text-align: right;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+footer .right p {
+  margin: 0.2rem 0;
+}
+
+/* Bottom text */
+footer .banner:last-child .left,
+footer .banner:last-child .right {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
+/* Hover effect on brand name */
+footer .left:hover {
+  color: #e63946;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer .banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  footer .right {
+    text-align: center;
+  }
+}
+
+/* ---------Not Found---------- */
+/* Not Found Section */
+.notFound {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.notFound .container {
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+/* Image */
+.notFound img {
+  width: 280px;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Heading */
+.notFound h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+/* Text */
+.notFound p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Back to Home Link */
+.notFound a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e63946;
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.notFound a:hover {
+  background: #d62828;
+  transform: translateY(-2px);
+}
+
+.notFound a span {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .notFound h1 {
+    font-size: 1.6rem;
+  }
+
+  .notFound p {
+    font-size: 0.9rem;
+  }
+
+  .notFound a {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+/* --------Succes Section ------------ */
+/* Success Section */
+.success {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.success .container {
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+/* Success Image */
+.success img {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+/* Countdown Heading */
+.success h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 1.5rem;
+}
+
+/* Back to Home Link */
+.success a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e63946;
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.success a:hover {
+  background: #d62828;
+  transform: translateY(-2px);
+}
+
+.success a svg {
+  font-size: 1.2rem;
+}
+
+/* Bounce Animation for Image */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .success h1 {
+    font-size: 1.2rem;
+  }
+
+  .success img {
+    width: 160px;
+  }
+
+  .success a {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}

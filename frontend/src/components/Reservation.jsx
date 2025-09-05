@@ -60,8 +60,8 @@ const Reservation = () => {
                             <input type="time" placeholder='Time' value={time} onChange={(e) => setTime(e.target.value)}/>
                         </div>
                         <div>
-                            <input type="email" className='email_tag' value={email} onChange={(e) => setEmail(e.target.value)}/>
-                            <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)}/>
+                            <input type="email" className='email_tag' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                            <input type="tel" placeholder='Phone Number' value={phone} onChange={(e) => setPhone(e.target.value)}/>
                         </div>
                         <button type='submit' > RESERVE NOW <span><HiOutlineArrowRight/></span></button>
 
