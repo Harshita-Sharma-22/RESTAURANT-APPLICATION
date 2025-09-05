@@ -1,0 +1,151 @@
+/* navbar base styles */
+
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* sticky effect when scrooled */
+nav.sticky{
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* logo */
+nav .logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e63946;
+    cursor: pointer;
+}
+
+/* Links Container */
+.navLinks{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Actual links */
+.navLinks .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navLinks .links a{
+    cursor: pointer;
+    color: #1d3557;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navLinks .links a:hover{
+    color: #e63946;
+}
+
+/* Menu button */
+.menuBtn{
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    background: #e63946;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.menuBtn:hover{
+    background: #d62828;
+}
+
+/* Hamburger (mobile only) */
+.hamburger{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1d3557;
+}
+
+/* responsive */
+@media(max-width:992px){
+    .navLinks{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        transition: right 0.4s ease;
+    }
+    .navLinks.showmenu {
+        right: 0;
+    }
+
+    .navLinks .links{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .menuBtn{
+        width: 80%;
+        text-align: center;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+/*---------------- Hero Section ------------*/
+.heroSection{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f8f9fa;
+    overflow: hidden;
+}
+
+/* Container inside hero */
+.heroSection .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Banner row */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Big title box */
+.largeBox .title{
+    font-size: 5rem;
+    font-weight: ;
+}
