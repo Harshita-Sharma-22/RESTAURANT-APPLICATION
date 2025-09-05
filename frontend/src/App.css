@@ -540,3 +540,118 @@ nav .logo{
     font-size: 1rem;
   }
 }
+
+/*----------------- Who Are We Section----------------- */
+.who_are_we {
+  width: 100%;
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+
+.who_are_we .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Text side cards (left + right) */
+.who_are_we .text_banner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.who_are_we .text_banner .card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.who_are_we .text_banner .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Number (stats) */
+.who_are_we .text_banner .card .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+/* Title text */
+.who_are_we .text_banner .card p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Center image banner */
+.who_are_we .image_banner {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who_are_we .image_banner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Background gradient circle */
+.who_are_we .image_banner .gradient_bg {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  z-index: -1;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .who_are_we .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .who_are_we .text_banner {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .who_are_we .text_banner .card {
+    flex: 1 1 150px;
+  }
+
+  .who_are_we .image_banner .gradient_bg {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .who_are_we {
+    padding: 3rem 0;
+  }
+
+  .who_are_we .text_banner .card .heading {
+    font-size: 2rem;
+  }
+}
