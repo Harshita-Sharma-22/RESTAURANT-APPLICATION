@@ -52,16 +52,16 @@ const Reservation = () => {
                     <p>For Further Questions, Please Call</p>
                     <form onSubmit={handleReservation}>
                         <div>
-                            <input type="text" placeholder='First Name' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
-                            <input type="text" placeholder='Last Name' value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+                            <div className='inputBox'><input type="text" required placeholder=' ' value={firstName} onChange={(e) => setFirstName(e.target.value)}/><label>First Name</label></div>
+                            <div className='inputBox'><input type="text" required placeholder=' ' value={lastName} onChange={(e) => setLastName(e.target.value)}/><label>Last Name</label></div>
                         </div>
                         <div>
-                            <input type="date" placeholder='Date' value={date} onChange={(e) => setDate(e.target.value)}/>
-                            <input type="time" placeholder='Time' value={time} onChange={(e) => setTime(e.target.value)}/>
+                            <div className='inputBox'><input type="date" required placeholder=' ' value={date} onChange={(e) => setDate(e.target.value)}/><label>Date</label></div>
+                            <div className='inputBox'><input type="time" required placeholder=' ' value={time} onChange={(e) => setTime(e.target.value)}/><label>Time</label></div>
                         </div>
                         <div>
-                            <input type="email" className='email_tag' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
-                            <input type="tel" placeholder='Phone Number' value={phone} onChange={(e) => setPhone(e.target.value)}/>
+                            <div className='inputBox'><input type="email" required className='email_tag' placeholder=' ' value={email} onChange={(e) => setEmail(e.target.value)}/><label>Email</label></div>
+                            <div className='inputBox'><input type="tel" required placeholder=' ' value={phone} onChange={(e) => setPhone(e.target.value)}/><label>Phone Number</label></div>
                         </div>
                         <button type='submit' > RESERVE NOW <span><HiOutlineArrowRight/></span></button>
 

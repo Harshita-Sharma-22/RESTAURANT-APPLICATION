@@ -827,7 +827,7 @@ nav .logo{
     flex-wrap: wrap;
 }
 
-.reservation form input{
+/* .reservation form input{
     flex: 1;
     padding: 0.9rem 1rem;
     border-radius: 12px;
@@ -839,6 +839,63 @@ nav .logo{
 
 .reservation form input:focus{
     border-color:#e63946
+} */
+
+/* InputBox wrapper */
+.reservation .inputBox{
+    position: relative;
+    flex: 1;
+    margin-bottom: 1.2rem;
+}
+
+/* InputBox Input */
+.inputBox input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation .inputBox input:focus{
+    border-color: #e63946;
+    box-shadow: 0 0 6px rgba(230, 57, 70, 0.2);
+}
+
+/* Label */
+.reservation .inputBox label{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: #f8f9fa;
+    padding: 0 0.3rem;
+}
+
+/* Lbel floating */
+.reservation .inputBox input:focus + label,
+.reservation .inputBox input:not(:placeholder-shown) + label{
+    top: -0.6rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    color: #e63946;
+}
+
+/* Fix for Datw and RIme  */
+.reservation .inputBox input[type="date"]:placeholder-shown + label,
+.reservation .inputBox input[type="time"]:placeholder-shown + label{
+    top: 50%;
+    font-size: 1rem;
+    color: #777;
+    transform: translateY(-50%);
+    background: transparent;
 }
 
 /* Email wider */
