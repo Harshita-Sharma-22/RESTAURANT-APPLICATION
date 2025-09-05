@@ -147,5 +147,108 @@ nav .logo{
 /* Big title box */
 .largeBox .title{
     font-size: 5rem;
-    font-weight: ;
+    font-weight: 800;
+    color: #e63946;
+    line-height: 1;
 }
+
+/* image box */
+.imgaeBox{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+.imageBox img:hover{
+    transform:scale(1.05);
+}
+
+/* Text + logo row */
+.textAndLogo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.textWithSvg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textWithSvg .title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+.textWithSvg .dishes_title{
+    color: #457b9d;
+}
+
+.textWithSvg img{
+    margin-top: 0.5rem;
+    width: 60px;
+}
+
+/* Logo Image */
+.textAndLogo > img {
+    width: 100px;
+    height: auto;
+}
+
+/* Second banner */
+.heroSection > .banner{
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.heroSection > .banner h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e63946;
+    margin-left: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width:992px){
+    .largeBox .title{
+    font-size: 3.5rem;
+    }
+
+    .textWithSvg .title{
+        font-size: 2.5rem;
+    }
+
+    .textAndLogo > img{
+        width: 70px;
+    }
+}
+
+@media(max-width: 768px){
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .largeBox .title{
+        font-size: 2.8rem;
+    }
+    .textWithSvg{
+        align-items: center;
+    }
+    .heroSection > .banner h1{
+        font-size: 2.5rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+
